@@ -1,0 +1,11 @@
+
+  <div *ngFor="let mobile of mobile">
+    <h2>{{mobile.model_no | uppercase}} Details</h2>
+  
+    <div><span>image: </span><img src={{mobile.image_url}}></div>
+    <div><span>brand: </span>{{mobile.brand}}</div>
+    <div><span>price: </span>{{mobile.price}}</div>
+    <div><span>Networktype: </span>{{mobile.networktype}}</div>
+  </div>
+    
+  

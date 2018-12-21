@@ -1,0 +1,16 @@
+
+.header{
+  height: 54px;
+  padding: 10px;
+  background:#607D8B;
+  color: #607D8B;
+}
+.header logo{
+    height: 30px;
+    float: left;
+  }
+
+.header btn-checkout{
+    float: right;
+  }
+
