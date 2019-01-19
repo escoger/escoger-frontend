@@ -1,22 +1,25 @@
 <div id="header">
+  <div id="element1">
   <a routerLink="/">
     <img class="logo" src="assets/img/logo.png" />
   </a>
-  <a mat-raised-button color="primary" class="btn btn-primary btn-checkout">
-      <input type="text" placeholder="Search products, brands, features" size="30">  
-      <div class="btn-group mr-3">
-        <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
-          <button class="btn btn-outline-primary" ngbDropdownToggle>Search In</button>
-          <div class="dropdown-menu" ngbDropdownMenu>
-            <button class="dropdown-item" routerLink="/mobiles">Android Phones</button>
-            <button class="dropdown-item">Windows Phones</button>
-            <button class="dropdown-item">IPhones</button>
-            <button class="dropdown-item">Laptops</button>
-            <button class="dropdown-item">TVs</button>
-            <button class="dropdown-item">Tablets</button>
-          </div>
+  </div>
+  <div id="element3" class="element3">
+      <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
+        <button class="btn btn-outline-primary" ngbDropdownToggle>Search In</button>
+        <div class="dropdown-menu" ngbDropdownMenu>
+          <button class="dropdown-item" routerLink="/mobiles">Android Phones</button>
+          <button class="dropdown-item">Windows Phones</button>
+          <button class="dropdown-item">IPhones</button>
+          <button class="dropdown-item">Laptops</button>
+          <button class="dropdown-item">TVs</button>
+          <button class="dropdown-item">Tablets</button>
         </div>
-      </div><button ><img class="logo" src="assets/img/search.png" /></button>    
-  </a>
+      </div>
+    </div>
+  <div id="element2" style="width: 50%; margin-top: 0px;">
+      <app-search-bar ></app-search-bar>  
+  </div>
   
+    <br /> <br/><br/>
 </div>

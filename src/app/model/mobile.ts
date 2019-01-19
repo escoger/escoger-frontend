@@ -1,7 +1,7 @@
 export class Mobile {
 id: String;
 model_name: string; 
-brand_name: string;
+brand: string;
 color: string;
 Ram: string;
 battery: string;

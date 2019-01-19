@@ -12,4 +12,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSelectedOption(event){
+    var searchOption = event.source.value;
+    console.log("searchOption:: "+searchOption);
+  }
 }

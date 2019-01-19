@@ -1,6 +1,7 @@
 
 .header{
   height: 54px;
+  width: 100%;
   padding: 10px;
   background:#607D8B;
   color: #607D8B;
@@ -10,7 +11,16 @@
     float: left;
   }
 
+  .header element3{
+    padding-top: 20%; 
+    height: 30px;
+    float: left;
+  }
+
 .header btn-checkout{
     float: right;
   }
 
+  #element1 {padding-right : 20px; float:left;}
+  #element2 {float:left;}
+  #element3 { height: 30px; float:left;}
