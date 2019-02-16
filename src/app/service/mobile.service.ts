@@ -9,11 +9,15 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class MobileService {
 
-  private mobileUrl = 'http://localhost:8089/mobiles/All';
+  private mobileUrl = 'http://localhost:8089/mobiles';
 
   constructor(private http: HttpClient){}
   
   getMobiles(): Observable<Mobile> {
-    return this.http.get<Mobile>(this.mobileUrl);
+    return this.http.get<Mobile>(this.mobileUrl+"/All");
+  }
+
+  getMobile(modelno): Observable<Mobile> {
+    return this.http.get<Mobile>(this.mobileUrl+"/mobiledetails/"+modelno);
   }
 }

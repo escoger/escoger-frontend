@@ -12,7 +12,6 @@ import {
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
-import { MenuBarComponent } from './component/menu-bar/menu-bar.component';
 import { MainFrameComponent } from './component/main-frame/main-frame.component';
 import { PopularProductComponent } from './component/popular-product/popular-product.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -21,17 +20,25 @@ import { HttpClientModule }    from '@angular/common/http';
 import { MobileComponent } from './component/mobile/mobile.component';
 import { SearchBarComponent } from './component/search-bar/search-bar.component';
 import { DataService } from './service/data.service';
+import { MobileModelComponent } from './component/mobile-model/mobile-model.component';
+import { ProductsComponent } from './component/products/products.component';
+import { FilterMobileComponent } from './component/filter-mobile/filter-mobile.component';
+import { AndroidMobileComponent } from './component/android-mobile/android-mobile.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    MenuBarComponent,
     MainFrameComponent,
     PopularProductComponent,
     SliderComponent,
     MobileComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    MobileModelComponent,
+    ProductsComponent,
+    FilterMobileComponent,
+    AndroidMobileComponent
   ],
   imports: [
     BrowserModule,

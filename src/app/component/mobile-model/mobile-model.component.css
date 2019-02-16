@@ -1,0 +1,6 @@
+div.relative {
+    position: relative;
+    left: 2px;
+    float: left;
+    width: 50%
+  }

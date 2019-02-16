@@ -1,12 +1,12 @@
 <form class="example-form">
-    <mat-form-field class="example-full-width" style="width: 100%">
+    <mat-form-field class="example-full-width mat-top" style="width: 70%">
       <mat-chip-list #chipList>
         <mat-chip style="margin-top:0.4em;" *ngFor="let option of  this.dataService.searchOption" (removed)="removeOption(option)">
           <span>{{option.brand}}</span>
           <mat-icon matChipRemove>cancel</mat-icon>
         </mat-chip>
-        <input #autocompleteInput type="text" placeholder="Search Products" aria-label="Number" matInput [formControl]="myControl"
-          [matAutocomplete]="auto" [matChipInputFor]="chipList"><button type="submit" [routerLink]="['/mobiles']"><img class="logo" src="assets/img/search.png" /></button>
+        <input #autocompleteInput type="text" placeholder=" Products" aria-label="Number" matInput [formControl]="myControl"
+          [matAutocomplete]="auto" [matChipInputFor]="chipList"><button class="search-img" type="submit" [routerLink]="['/mobiles']" ><img class="logo " height="8"  src="assets/img/search.png" /></button>
         <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
           <mat-option *ngFor="let option of autoCompleteList" [value]="option" (onSelectionChange)="filterPostList($event)">
             {{option.brand}}

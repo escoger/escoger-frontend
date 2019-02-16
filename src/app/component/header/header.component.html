@@ -1,14 +1,17 @@
-<div id="header">
+<div id="header" class="header">
   <div id="element1">
   <a routerLink="/">
     <img class="logo" src="assets/img/logo.png" />
   </a>
   </div>
-  <div id="element3" class="element3">
+ 
+  <div class="global-search">
+  <div id="element2" style="width: 50%;">
+    <div id="element3" class="element3 dropdown-fix">
       <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
         <button class="btn btn-outline-primary" ngbDropdownToggle>Search In</button>
         <div class="dropdown-menu" ngbDropdownMenu>
-          <button class="dropdown-item" routerLink="/mobiles">Android Phones</button>
+          <button class="dropdown-item" routerLink="/androidmobiles">Android Phones</button>
           <button class="dropdown-item">Windows Phones</button>
           <button class="dropdown-item">IPhones</button>
           <button class="dropdown-item">Laptops</button>
@@ -17,9 +20,9 @@
         </div>
       </div>
     </div>
-  <div id="element2" style="width: 50%; margin-top: 0px;">
       <app-search-bar ></app-search-bar>  
   </div>
+</div>
   
     <br /> <br/><br/>
 </div>

@@ -21,8 +21,8 @@ export class SearchBarComponent implements OnInit {
   @Output() onSelectedOption = new EventEmitter();
 
   constructor(
-    private dataService: DataService,
-    private mobileService: MobileService
+    public dataService: DataService,
+    public mobileService: MobileService
   ) { }
 
   ngOnInit() {

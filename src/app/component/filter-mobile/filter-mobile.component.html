@@ -1,0 +1,9 @@
+<div>
+<h5>Refine by</h5>
+<div *ngFor="let option of options; let i = index">
+  <div style="font-size: 11px"><b>{{option.id}}</b></div>
+  <div *ngFor="let booleanOption of option.options; let i = index">
+    <input type="checkbox" [attr.id]="booleanOption" [(ngModel)]="option.values[i]" (change)="change($event, option)"> 
+    <label style="font-size: 8px" [attr.for]="booleanOption"> {{ booleanOption }}</label>
+  </div>
+</div></div>
