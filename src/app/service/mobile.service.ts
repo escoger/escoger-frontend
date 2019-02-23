@@ -9,7 +9,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class MobileService {
 
-  private mobileUrl = 'http://18.222.206.176:8089/mobiles';
+  private mobileUrl = 'http://18.222.26.52:8089/mobiles';
 
   constructor(private http: HttpClient){}
   

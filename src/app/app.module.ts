@@ -24,6 +24,8 @@ import { MobileModelComponent } from './component/mobile-model/mobile-model.comp
 import { ProductsComponent } from './component/products/products.component';
 import { FilterMobileComponent } from './component/filter-mobile/filter-mobile.component';
 import { AndroidMobileComponent } from './component/android-mobile/android-mobile.component';
+import { MenuBarComponent } from './component/menu-bar/menu-bar.component';
+import { AffiliatorComponent } from './component/affiliator/affiliator.component';
 
 
 @NgModule({
@@ -38,7 +40,9 @@ import { AndroidMobileComponent } from './component/android-mobile/android-mobil
     MobileModelComponent,
     ProductsComponent,
     FilterMobileComponent,
-    AndroidMobileComponent
+    AndroidMobileComponent,
+    MenuBarComponent,
+    AffiliatorComponent
   ],
   imports: [
     BrowserModule,
