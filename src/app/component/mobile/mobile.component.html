@@ -2,8 +2,7 @@
  <div class="card text-center" style="width: 20%; float: left;" *ngFor="let mobile of mobile">
     <img class="card-img-top img-responsive" src="{{mobile.image_url}}" height="100px" width="80px" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title ">
-          <a [routerLink]="['/mobilemodel', mobile.model_no]">{{mobile.model_no}}</a></h5>
+      <h5 class="card-title "><a href="#" [routerLink]="['/mobilemodel', mobile.model_no]">{{mobile.model_no}}</a></h5>
       <div class="card-text" >{{mobile.price}}
         <button  [ngbTooltip]="tipContent" tabindex="0" triggers="click:blur">All Price</button>
       </div>
