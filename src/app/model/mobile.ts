@@ -1,10 +1,11 @@
 export class Mobile {
 id: String;
 brand: string;
-brands: string;
-model_no: string;
+model_number: string;
+model_Name: string;
 image_url: string;
 price: string;
+best_price:string;
 networktype: string;
 offer: string;
 }

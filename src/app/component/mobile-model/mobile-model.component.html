@@ -1,10 +1,10 @@
 
   <div  *ngFor="let mobile of mobile" >
-    <div class="relative">
+    <div class="relative zoom">
       <img src="{{mobile.image_url}}" height="100%" width="100%">
     </div>
     <div  class="relative">
-          <a [routerLink]="['/mobilemodel', mobile.model_no]">{{mobile.model_no}}</a>  
+          <a [routerLink]="['/mobilemodel', mobile.model_number]">{{mobile.model_number}}</a>  
       <div >{{mobile.brand}} {{mobile.networktype}} {{mobile.screen_size}}</div>
   </div>
 </div>

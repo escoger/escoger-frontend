@@ -11,7 +11,7 @@ export class DataService {
 
   searchOption=[]
   public postsData: Mobile[]
-  postUrl : string = 'http://18.222.26.52:8089/mobiles/All'; 
+  postUrl : string = 'http://localhost:8089/mobiles/All'; 
 
   constructor(
     private http: HttpClient

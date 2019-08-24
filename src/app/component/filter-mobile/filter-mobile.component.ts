@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Filter } from '../../model/filter';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-filter-mobile',
@@ -19,7 +20,7 @@ export class FilterMobileComponent implements OnInit {
     { id: "Primary Camera Resolution", options: ["Up to 2.9 MP", "3 - 4.9 MP", "5 - 7.9 MP", "8 - 9.9 MP","10 MP & more"], t: 'multiple' },
     { id: "Data Transfer", options: ["GSM", "3G", "GPRS", "Edge","Wifi","4G"], t: 'multiple' },
   ];
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     this.options = this.ids.map(function (value) {
@@ -34,7 +35,8 @@ export class FilterMobileComponent implements OnInit {
 
   log() { console.log(1); }
 
-  change(e, type){
+  onFilterChange(e, type){
     console.log(type);
+    this.router.navigate(['androidmobiles']);
   }
 }

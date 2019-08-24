@@ -1,6 +1,6 @@
 /* Add a black background color to the top navigation */
 .myTopnav {
-  background-color: cadetblue;
+  background-color: rgb(3, 61, 63);
   width: 100%;
   }
   
@@ -13,19 +13,13 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    background-color: cadetblue;
+    background-color: rgb(3, 61, 63);
   }
   .row{
    padding-top: 8px;
    padding-bottom: 8px;
   }
-  
-  /* Add an active class to highlight the current page */
-  .active {
-    background-color: #4CAF50;
-    color: rgb(58, 57, 57);
-  }
-  
+
   /* Hide the link that should open and close the topnav on small screens */
   .topnav .icon {
     display: none;
@@ -43,7 +37,7 @@
     outline: none;
     color: white;
     padding: 14px 16px;
-    background-color: cadetblue;
+    background-color: rgb(3, 61, 63);
     font-family: inherit;
     margin: 0;
   }
@@ -93,7 +87,7 @@
     .topnav a.icon {
       float: right;
       display: block;
-      background-color: cadetblue;
+      background-color: rgb(3, 61, 63);
     }
   }
   

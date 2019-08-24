@@ -1,18 +1,19 @@
 .column {
-    float: left;
-    width: 25%;
-    padding: 5px;
+  float: left;
+  width: 25%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  z-index: 2;
+  background-color:  rgb(189, 200, 253);
   }
 
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+ 
   .row{
-    background-color:  #607D8B;
+    background-color:  aliceblue;
     margin-right: auto;
     margin-left: auto;
     height: 220px;
+    width:  80%;
+    z-index: 1;
   }
  
